@@ -1,13 +1,16 @@
+import { Link } from 'react-router-dom'
 import styles from './Header.module.css'
 
 function Header() {
     return (
         <header className={styles.header}>
-            <span>danilos.dev</span>
+            <Link to="/">
+            <span>Danilo.dev</span>
+            </Link>
             <nav>
-                <a href="">Home</a>
-                <a href="">ODS</a>
-                <a href="">Sobre</a>
+                <Link to="/"href="">Home</Link>
+                <Link to="/ODS"href="">ODS</Link>
+                <Link to="/sobre"href="">Sobre</Link> 
             </nav>
         </header>
     )

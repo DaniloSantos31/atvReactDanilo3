@@ -1,11 +1,10 @@
 import './App.css'
-import Footer from './components/Footer'
-import Header from './components/Header'
+import AppRoutes from './routes'
 
 function App() {
 
   return (
-    <h1>Home</h1>
+    <AppRoutes />
   )
 }
 
